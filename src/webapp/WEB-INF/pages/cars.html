@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Cars</title>
+</head>
+<body>
+<div>
+
+    <th:block th:each="msg : ${cars}">
+        <h1 th:text="${msg.getName()}"></h1>
+        <h1 th:text="${msg.getColor()}"></h1>
+        <h1 th:text="${msg.getSeries()}"></h1>
+    </th:block>
+
+
+</div>
+</body>
+</html>
